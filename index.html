@@ -6,28 +6,51 @@
         <meta name="description" content="林琬庭的單履歷，內容包含學經歷與專業技能。" />
         <meta name="author" content="林琬庭" />
         <title>世新大學新聞學系 </title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <link rel="icon" type="image/x-icon " href="c:\Users\shu\Desktop\E9BD53AA-4EE8-4829-88F6-0CBC728081D4.jpg" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- 思源黑體（使用 Noto Sans TC 作為 CDN 版本）-->
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700;900&display=swap" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-        <head>
-...
-<!-- Core theme CSS (includes Bootstrap)-->
-<link href="css/styles.css" rel="stylesheet" />
-<!-- !! 請在這裡加上你的自訂 CSS !! -->
-<link href="css/mystyles.css" rel="stylesheet" />
-</head>
+        <!-- 全域字型設定：優先使用思源黑體 / Source Han Sans，備援微軟正黑體 -->
+        <style>
+            :root { --main-sans: "Noto Sans TC", "Source Han Sans", "Microsoft JhengHei", "PingFang TC", sans-serif; }
+            html, body, h1, h2, h3, h4, h5, h6, p, a, li, .navbar, .subheading, .lead, .resume-section-content {
+                font-family: var(--main-sans);
+            }
+            /* 將 Bootstrap 的 .text-warning（預設橘色/黃色）改為紫色 */
+            .text-warning {
+                color: #6f42c1 !important;
+            }
+            /* 左側側邊欄粉紅化（僅針對側欄，不改變全域 .bg-primary）*/
+            #sideNav.bg-primary {
+                background-color: #ff69b4 !important; /* HotPink */
+                border-color: #ff69b4 !important;
+            }
+            /* 側欄文字與圖示維持白色以保持對比 */
+            #sideNav .navbar-brand,
+            #sideNav .nav-link,
+            #sideNav .navbar-toggler-icon {
+                color: #fff !important;
+            }
+            /* hover / focus 調整（可選擇性微調） */
+            #sideNav .nav-link:hover,
+            #sideNav .nav-link:focus {
+                color: #ffffff !important;
+                opacity: 0.95;
+            }
+        </style>
     </head>
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <span class="d-block d-lg-none">Clarence Taylor</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="..." /></span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="c:\Users\shu\Desktop\E9BD53AA-4EE8-4829-88F6-0CBC728081D4.jpg" alt="..." /></span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -38,7 +61,7 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#future">Awards</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#future">Future</a></li>
                 </ul>
             </div>
         </nav>
@@ -47,23 +70,22 @@
             <!-- About-->
             <section class="resume-section" id="about">
                 <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        林琬庭
-                        <span class="text-primary">Vivian</span>
+                    <h1 class="mb-0>
+                        Lin
+                        <span class="text-primary">Vivian</span> 林琬庭
                     </h1>
                     <div class="subheading mb-5">
-                       台北市木柵路一段17巷1號· (02) 2236-8225 ·
+                       台北市木柵路一段17巷1號 · (02) 2236-8225 ·
                         <a href="mailto:scl@mail.shu.edu.tw">scl@mail.shu.edu.tw</a>
                     </div>
-                    <p class="lead mb-5"> 世新大學的學生.</p>
-                    <div class="social-icons">
-                        <a class="social-icon" href="#!"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="#!"><i class="fab fa-github"></i></a>
-                        <a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a>
-                        <a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a>
-                    </div>
-                </div>
-            </section>
+                    <p class="lead mb-4">
+                        世新大學新聞學系學生，專注於多媒體報導與數位內容製作。熱衷採訪、撰寫深度報導與製作Podcast、短影片，熟悉採訪流程、剪輯工具與社群經營，期望畢業後從事新聞採訪與數位編輯工作。
+                    </p>
+                    <p class="mb-4">
+                         目前活躍於校內新聞社與多媒體專題，參與過跨媒體專案（文字、錄音、影像）並負責企劃與後製。技能專長包含：新聞採訪、新聞寫作、Audacity/Adobe Premiere、基礎 HTML/CSS。
+                     </p>
+                 </div>
+             </section>
             <hr class="m-0" />
             <!-- Experience-->
             <section class="resume-section" id="experience">
@@ -73,7 +95,11 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-0">大學學歷</h3>
                             <div class="subheading mb-3">世新大學新聞學系目前大二</div>
-                            <p>正在就學中</p>
+                            <p>正在就學中。主修新聞採訪與數位媒體製作，選修課程包含：新聞寫作、攝影與影像剪輯、媒體法與社會議題報導。</p>
+                            <ul>
+                                <li>校內新聞社：擔任記者與節目製作，負責採訪、撰稿與節目後製。</li>
+                                <li>專題項目：參與「地方議題深度報導」專題，負責資料整理與採訪排程。</li>
+                            </ul>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">09 2025 - Present</span></div>
                     </div>
@@ -110,20 +136,21 @@
                     <h2 class="mb-5">Education</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">University of Colorado Boulder</h3>
-                            <div class="subheading mb-3">Bachelor of Science</div>
-                            <div>Computer Science - Web Development Track</div>
-                            <p>GPA: 3.23</p>
+                            <h3 class="mb-0">世新大學</h3>
+                            <div class="subheading mb-3">新聞學系</div>
+                            <div>主修：新聞採訪與數位媒體製作</div>
+                            <p>就學期間：2021 - 2025（預計） · 主要課程：新聞寫作、視覺傳播、影像剪輯、媒體經營</p>
+                            <p>學術成就：參與校內專題並獲指導教授肯定。</p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2006 - May 2010</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">09-2021 - 06-2024</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">James Buchanan High School</h3>
-                            <div class="subheading mb-3">Technology Magnet Program</div>
-                            <p>GPA: 3.56</p>
+                            <h3 class="mb-0">及人中學</h3>
+                            <div class="subheading mb-3">普通高中 · 文科組</div>
+                            <p>畢業：2024。校內擔任副班長與司儀，活躍於學生會與寫作社。</p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2002 - May 2006</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">就讀期間09-2021 -09-2024</span></div>
                     </div>
                 </div>
             </section>
@@ -132,49 +159,52 @@
             <section class="resume-section" id="skills">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Skills</h2>
-                    <div class="subheading mb-3">Programming Languages & Tools</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-angular"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-react"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-sass"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-less"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-gulp"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-grunt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-npm"></i></li>
+                    <div class="subheading mb-2">專業技能</div>
+                    <ul>
+                        <li>新聞採訪與寫作：採訪企劃、逐字稿整理、深度報導撰寫</li>
+                        <li>多媒體製作：錄音剪輯（Audacity）、影片剪輯（Adobe Premiere）、影像後製基礎</li>
+                        <li>數位媒體與社群：專題頁面編排、社群內容規劃與經營</li>
                     </ul>
-                    <div class="subheading mb-3">Workflow</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Mobile-First, Responsive Design
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Browser Testing & Debugging
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Functional Teams
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Agile Development & Scrum
-                        </li>
+                    <div class="subheading mb-2">技術與工具</div>
+                    <ul>
+                        <li>HTML / CSS / Bootstrap（製作響應式專題頁）</li>
+                        <li>Adobe Premiere / Photoshop / Audacity</li>
+                        <li>Google Workspace、資料整理與簡報製作</li>
                     </ul>
-                </div>
-            </section>
+                    <div class="subheading mb-2">語言能力</div>
+                    <ul>
+                        <li>中文（母語）</li>
+                        <li>英文（閱讀與寫作良好，口說中等）</li>
+                    </ul>
+                 </div>
+             </section>
             <hr class="m-0" />
             <!-- Interests-->
             <section class="resume-section" id="interests">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Interests</h2>
-                    <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-                    <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
+
+                    <div class="subheading mb-2">新聞與社會議題</div>
+                    <p>熱衷於地方議題與社會記實報導，偏好以採訪與深度寫作揭露問題並提出可行性建議。關注教育、弱勢與文化保存等主題。</p>
+
+                    <div class="subheading mb-2">多媒體創作</div>
+                    <p>喜歡用聲音與影像補強文字敘事：製作 Podcast（企劃、採訪、剪輯）、拍攝短影音及影像剪輯，追求聲畫結合的敘事節奏。</p>
+
+                    <div class="subheading mb-2">實作與學習</div>
+                    <ul>
+                        <li>持續精進錄音與剪輯技巧（Audacity / Premiere）。</li>
+                        <li>嘗試資料新聞入門：資料蒐集與圖表呈現，提升報導深度與客觀性。</li>
+                        <li>建立個人作品集網站，以作品展示報導流程與多媒體成品。</li>
+                    </ul>
+
+                    <div class="subheading mb-2">志工與社群參與</div>
+                    <p>參與校內外社區採訪與媒體教育志工活動，喜歡與不同背景的人合作、分享採訪技巧與媒體素養。</p>
+
+                    <div class="subheading mb-2">短期專案目標</div>
+                    <ul>
+                        <li>完成 6 集地方議題 Podcast 系列並上架。</li>
+                        <li>在作品集加入 3 個跨媒體專題作品（文字 + 聲音/影像）。</li>
+                    </ul>
                 </div>
             </section>
             <hr class="m-0" />
@@ -185,81 +215,65 @@
                     <ul class="fa-ul mb-0">
                         <li>
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Google Analytics Certified Developer
+                            市長獎 — 新北市學生新聞採訪比賽（2019）- 優秀報導獎
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Mobile Web Specialist - Google Certification
+                            市長獎 — 新北市學生多媒體創作（2020）- 優良作品
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - University of Colorado Boulder - Emerging Tech Competition 2009
+                            市長獎 — 地方文化攝影比賽（2018）- 優等
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
+                            校內新聞社傑出貢獻獎（2022）
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            2
-                            <sup>nd</sup>
-                            Place - University of Colorado Boulder - Emerging Tech Competition 2008
+                            其他榮譽與參與：校內專題、社區採訪計畫
                         </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - James Buchanan High School - Hackathon 2006
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            3
-                            <sup>rd</sup>
-                            Place - James Buchanan High School - Hackathon 2005
-                        </li>
-                    </ul>
-                </div>
-            </section>
+                     </ul>
+                 </div>
+             </section>
              <!-- Experience-->
             <section class="resume-section" id="future">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Experience</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">世新大學新聞學系</h3>
-                            <div class="subheading mb-3">Intelitec Solutions</div>
-                            <p>大學生</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">09 2025 - Present</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Web Developer</h3>
-                            <div class="subheading mb-3">Intelitec Solutions</div>
-                            <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">December 2011 - March 2013</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Junior Web Designer</h3>
-                            <div class="subheading mb-3">Shout! Media Productions</div>
-                            <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">July 2010 - December 2011</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Web Design Intern</h3>
-                            <div class="subheading mb-3">Shout! Media Productions</div>
-                            <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">September 2008 - June 2010</span></div>
-                    </div>
+                    <h2 class="mb-5">Future / 未來規劃</h2>
+                    <p>畢業後目標以新聞採訪與數位編輯為主，期望結合文字與影音呈現有深度且易讀的報導內容。以下為具體規劃與目前進行中的方向。</p>
+
+                    <div class="subheading mb-2">職涯目標</div>
+                    <ul>
+                        <li>成為一名能獨立完成採訪、撰稿與後製的數位新聞記者（短期）。</li>
+                        <li>擔任新聞編輯或多媒體專題策劃，帶領跨領域團隊製作深度專題（中長期）。</li>
+                    </ul>
+
+                    <div class="subheading mb-2">進行中與預計專案</div>
+                    <ul>
+                        <li>校內深度專題：負責採訪排程、資料整理與影音後製（進行中）。</li>
+                        <li>Podcast 系列企劃：規劃 6 集地方議題節目，包含採訪、剪輯與上架流程（預計半年內上線）。</li>
+                        <li>個人作品集網站：整理報導、影片與聲音作品，作為求職展示平台（預計 3 個月內完成初版）。</li>
+                    </ul>
+
+                    <div class="subheading mb-2">欲精進的技能</div>
+                    <ul>
+                        <li>進階影像剪輯（Premiere / After Effects）與聲音後製（Audacity / Adobe Audition）。</li>
+                        <li>資料新聞（Data Journalism）：資料蒐集、清理與可視化的基礎應用。</li>
+                        <li>前端呈現能力：HTML/CSS/Bootstrap，增加互動式專題頁面製作經驗。</li>
+                    </ul>
+
+                    <div class="subheading mb-2">短期時間表（1 年）</div>
+                    <ul>
+                        <li>0–3 個月：完成作品集初版與 1 個 Podcast 試播集。</li>
+                        <li>3–6 個月：參與至少 2 個跨媒體專案，擔任採訪或後製主要成員。</li>
+                        <li>6–12 個月：申請實習或選修進階剪輯／資料新聞相關課程。</li>
+                    </ul>
+
+                    <div class="subheading mb-2">尋找的機會</div>
+                    <ul>
+                        <li>新聞媒體或數位編輯實習：可接觸採訪、編輯與專題製作的職務。</li>
+                        <li>跨媒體專案合作：與攝影、設計、資料分析等同儕合作的短期專案。</li>
+                    </ul>
                 </div>
             </section>
             <hr class="m-0" />
